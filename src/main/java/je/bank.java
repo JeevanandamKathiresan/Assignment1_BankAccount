@@ -50,7 +50,6 @@ class BANK{
         case 2: bk.withdraw();break;
         case 3: bk.display();break;
         case 4: System.exit(0);break;
-        default: System.out.println("Enter Correct Choice");break;
             
     }
     }
