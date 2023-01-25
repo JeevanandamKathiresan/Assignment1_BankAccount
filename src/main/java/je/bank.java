@@ -1,7 +1,7 @@
 package je;
 
 import java.util.*;
-class bank{
+class BANK{
     String accountHolderName;
     int accountNumber;
     double accountBalance=0;
