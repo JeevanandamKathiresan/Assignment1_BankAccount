@@ -49,7 +49,9 @@ class BANK{
         case 1: bk.deposit();break;
         case 2: bk.withdraw();break;
         case 3: bk.display();break;
-        case 4: System.exit(0);
+        case 4: System.exit(0);break;
+        default: System.out.println("Enter Correct Choice");
+            
     }
     }
 }
