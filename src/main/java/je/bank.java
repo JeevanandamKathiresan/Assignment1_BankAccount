@@ -58,8 +58,8 @@ class BANK{
         }
        }
        catch(Exception e){
-        String Exception = "Exception:"+ e;
-        Log.info(Exception);
+        String exp = "Exception:"+ e;
+        Log.info(exp);
         so.nextLine();
     }
     }
