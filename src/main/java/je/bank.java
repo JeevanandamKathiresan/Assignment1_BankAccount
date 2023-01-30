@@ -19,25 +19,25 @@ class BANK{
     
     }
     void display(){
-        Log.info("Account Holder Name: "+accountHolderName);
-        Log.info("Account Number: "+accountNumber);
-        Log.info("Balance: Rs. "+accountBalance);
+        Log.info("Account Holder Name: {}",accountHolderName);
+        Log.info("Account Number: {}",accountNumber);
+        Log.info("Balance: Rs. {}",accountBalance);
     }
     void deposit(){
         Log.info("Enter Amount to deposit: Rs. ");
         double depositAmt = so.nextDouble();
         accountBalance+=depositAmt;
-        Log.info("Rs. "+depositAmt+" Deposited Successfully");
+        Log.info("Rs. {} Deposited Successfully",depositAmt);
     }
     void withdraw(){
         Log.info("Enter Withdrawn amt: Rs. ");
         int withdrawAmt = so.nextInt();
         if(accountBalance>withdrawAmt){
             accountBalance-=withdrawAmt;
-            Log.info("---Amount Withdrawn Succsessfully---\n Account Balance: Rs. "+accountBalance);
+            Log.info("---Amount Withdrawn Succsessfully---\n Account Balance: Rs. {}",accountBalance);
         }
         else{
-            Log.info("***Insufficient Amount***");
+            Log.warning("***Insufficient Amount***");
         }
     }
     public static final Logger Log = Logger.getLogger("InfoLogging");
