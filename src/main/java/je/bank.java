@@ -45,8 +45,6 @@ class BANK{
     BANK bk = new BANK();
     int ch;
     while(true){
-    try{
-
     Log.info("Enter Your choice \n 1.deposit\n 2.Withdraw\n 3.View Balance\n 4.exit");
     ch = so.nextInt();
     switch(ch){
@@ -56,12 +54,6 @@ class BANK{
         case 4: System.exit(0);break;
         default: System.exit(0); break;     
         }
-       }
-       catch(Exception e){
-        String exp = "Exception:"+ e;
-        Log.info(exp);
-        so.nextLine();
-    }
     }
   
 }
